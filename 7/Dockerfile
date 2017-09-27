@@ -1,8 +1,9 @@
 # DOCKER-VERSION 1.12
 # VERSION        0.1
-# SOURCE         https://github.com/mesosinfo/centos-sshd
-FROM mesosinfo/centos-systemd:7.3
-MAINTAINER Yong Zhang<zhangyong.net@gmail.com>
+# SOURCE         https://github.com/kgutwin/centos-sshd
+# FORKED FROM    https://github.com/mesosinfo/centos-sshd
+FROM kgutwin/centos-systemd:7.4
+MAINTAINER Karl Gutwin <karl@gutwin.org>
 ########################################################################## ### update glibc-common for locale files
 RUN yum update -y glibc-common
 
